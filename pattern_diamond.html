@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diamond Star Pattern</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="title">Print <span>'diamond'</span> star pattern: </h1>
+    <div class="inpt">
+        <input type="number" name="num" id="num" class="num" min="2" value="15" placeholder="Enter a number">
+        <button id="btn">Print</button>
+    </div>
+    <h2 class="heading">Pattern: </h2>
+    <div class="result" id="result">
+        <!-- Here is the pattern -->
+    </div>
+</body>
+<script>
+    const btn = document.getElementById("btn");
+    const input = document.getElementById("num");
+    const result = document.getElementById("result");
+    let num = parseInt(input.value);
+    input.addEventListener("input", (e) => {
+        num = parseInt(e.target.value);
+        if (num < 0) {
+            input.value = ""
+        }
+    })
+    btn.addEventListener("click", async () => {
+        result.innerHTML = ""
+        if (num > 1) {
+            if (num % 2 == 0) {
+                for (let i = 1; i <= num/2; i++) {
+                    for (let j = 1; j <= ((num/2) - i); j++) {
+                        result.innerHTML += "&nbsp;&nbsp;&nbsp;"
+                    }
+                    for (let k = 1; k <= ((2 * i) - 1); k++) {
+                        result.innerHTML += "* "
+                    }
+                    result.innerHTML += "<br> "
+                }
+                for (let i = num/2; i >=1; i--) {
+                    for (let j = 1; j <= ((num/2) - i); j++) {
+                        result.innerHTML += "&nbsp;&nbsp;&nbsp;"
+                    }
+                    for (let k = 1; k <= ((2 * i) - 1); k++) {
+                        result.innerHTML += "* "
+                    }
+                    result.innerHTML += "<br> "
+                }
+            }
+            if (num % 2 != 0) {
+                for (let i = 1; i <= (num-1)/2; i++) {
+                    for (let j = 1; j <= (((num+1)/2) - i); j++) {
+                        result.innerHTML += "&nbsp;&nbsp;&nbsp;"
+                    }
+                    for (let k = 1; k <= ((2 * i) - 1); k++) {
+                        result.innerHTML += "* "
+                    }
+                    result.innerHTML += "<br> "
+                }
+                for (let i = 0; i < (num); i++) {
+                    result.innerHTML += "* "
+                }result.innerHTML += "<br> "
+                for (let i = (num-1)/2; i >=1; i--) {
+                    for (let j = 1; j <= (((num+1)/2) - i); j++) {
+                        result.innerHTML += "&nbsp;&nbsp;&nbsp;"
+                    }
+                    for (let k = 1; k <= ((2 * i) - 1); k++) {
+                        result.innerHTML += "* "
+                    }
+                    result.innerHTML += "<br> "
+                }
+            }
+        }
+        else {
+            result.innerHTML = "Number must be greater than 1 to print star pattern."
+        }
+    })
+</script>
+
+</html>
