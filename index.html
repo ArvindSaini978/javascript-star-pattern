@@ -16,12 +16,10 @@
         <div class="patterns">
             <!-- pattern start -->
             <div class="pattern-box">
-                <h2 class="heading">Pattern 1: Left triangular</h2>
+                <h2 class="heading">Pattern 1: Left Triangular</h2>
                 <div class="pattern-preview">
                     <h4>Preview: </h4>
-                    <div class="preview">
-                        *<br>* *<br>* * *<br>* * * *<br>* * * * *<br>
-                    </div>
+                    <pre class="preview">*<br>* *<br>* * *<br>* * * *<br>* * * * *<br></pre>
                 </div>
                 <div class="code-box">
                     <pre class="code line-numbers language-javascript"><code class="code language-javascript">let num = 5;
@@ -60,12 +58,10 @@ else {
             
             <!-- pattern start -->
             <div class="pattern-box">
-                <h2 class="heading">Pattern 1: Left triangular</h2>
+                <h2 class="heading">Pattern 2: Hollow Left Triangular</h2>
                 <div class="pattern-preview">
                     <h4>Preview: </h4>
-                    <div class="preview">
-                        *<br>* *<br>* * *<br>* * * *<br>* * * * *<br>
-                    </div>
+                    <pre class="preview">*<br>* *<br>*   *<br>*     *<br>* * * * *</pre>
                 </div>
                 <div class="code-box">
                     <pre class="code line-numbers language-javascript"><code class="code language-javascript">let num = 5;
@@ -73,6 +69,53 @@ let pattern = "";
 if (num > 1) {
     for (let i = 1; i <= num; i++) {
         for (let j = 1; j <= i; j++) {
+            if (j==1 || j==i || i==num) {
+                pattern += "* ";
+            }
+            else{
+                pattern += "  ";
+            }
+        }
+        pattern += "\n";
+    }
+    console.log(pattern);
+}
+else {
+    pattern = "Number must be greater than 1 to print star pattern.";
+}
+
+</code></pre>
+                </div>
+
+                <button class="run-now">
+                    Run <span>&rAarr;</span>
+                </button>
+                <div class="runner-container">
+                    <div class="close-runner">
+                        <button class="close-runner-container"></button>
+                    </div>
+                    <div class="runner-content ">
+                        <iframe src="./patterns/pattern_left_triangle_hollow.html" frameborder="0" class="run-frame"></iframe>
+                    </div>
+                </div>
+
+            </div>
+            <div class="seperator"></div>
+            <!-- Pattern end -->
+            
+            <!-- pattern start -->
+            <div class="pattern-box">
+                <h2 class="heading">Pattern 3: Reversed Left Triangular</h2>
+                <div class="pattern-preview">
+                    <h4>Preview: </h4>
+                    <pre class="preview">* * * * *<br>* * * *<br>* * *<br>* *<br>*</pre>
+                </div>
+                <div class="code-box">
+                    <pre class="code line-numbers language-javascript"><code class="code language-javascript">let num = 5;
+let pattern = "";
+if (num > 1) {
+    for (let i = 1; i <= num; i++) {
+        for (let j = 0; j <= (num-i); j++) {
             pattern += "* "
         }
         pattern += "\n"
@@ -94,7 +137,247 @@ else {
                         <button class="close-runner-container"></button>
                     </div>
                     <div class="runner-content ">
-                        <iframe src="./patterns/pattern_left_triangle_hollow.html" frameborder="0" class="run-frame"></iframe>
+                        <iframe src="./patterns/pattern_left_triangle_reverse.html" frameborder="0" class="run-frame"></iframe>
+                    </div>
+                </div>
+
+            </div>
+            <div class="seperator"></div>
+            <!-- Pattern end -->
+            
+            <!-- pattern start -->
+            <div class="pattern-box">
+                <h2 class="heading">Pattern 4: Reversed Hollow Left Triangular</h2>
+                <div class="pattern-preview">
+                    <h4>Preview: </h4>
+                    <pre class="preview">* * * * *<br>*     *<br>*   *<br>* *<br>*</pre>
+                </div>
+                <div class="code-box">
+                    <pre class="code line-numbers language-javascript"><code class="code language-javascript">let num = 5;
+let pattern = "";
+if (num > 1) {
+    for (let i = 1; i <= num; i++) {
+        for (let j = 0; j <= (num-i); j++) {
+            if (j==0 || j==(num-i) || i==1) {
+                pattern += "* "
+            } else {
+                pattern += "  "
+            }
+        }
+        pattern += "\n"
+    }
+    console.log(pattern);
+}
+else {
+    pattern = "Number must be greater than 1 to print star pattern."
+}
+
+</code></pre>
+                </div>
+
+                <button class="run-now">
+                    Run <span>&rAarr;</span>
+                </button>
+                <div class="runner-container">
+                    <div class="close-runner">
+                        <button class="close-runner-container"></button>
+                    </div>
+                    <div class="runner-content ">
+                        <iframe src="./patterns/pattern_left_triangle_reverse_hollow.html" frameborder="0" class="run-frame"></iframe>
+                    </div>
+                </div>
+
+            </div>
+            <div class="seperator"></div>
+            <!-- Pattern end -->
+            
+            <!-- pattern start -->
+            <div class="pattern-box">
+                <h2 class="heading">Pattern 5: Right Triangular</h2>
+                <div class="pattern-preview">
+                    <h4>Preview: </h4>
+                    <pre class="preview">        *<br>      * *<br>    * * *<br>  * * * *<br>* * * * *</pre>
+                </div>
+                <div class="code-box">
+                    <pre class="code line-numbers language-javascript"><code class="code language-javascript">let num = 5;
+let pattern = "";
+if (num > 1) {
+    for (let i = 1; i <=num; i++) {
+        for (let j = 1; j <= (num-i); j++) {
+            pattern += "  "
+        }
+
+        for (let k = 1; k <= i; k++) {
+            pattern += "* "
+        }
+        pattern += "\n"
+    }
+    console.log(pattern);
+}
+else {
+    pattern = "Number must be greater than 1 to print star pattern."
+}
+
+</code></pre>
+                </div>
+
+                <button class="run-now">
+                    Run <span>&rAarr;</span>
+                </button>
+                <div class="runner-container">
+                    <div class="close-runner">
+                        <button class="close-runner-container"></button>
+                    </div>
+                    <div class="runner-content ">
+                        <iframe src="./patterns/pattern_right_triangle.html" frameborder="0" class="run-frame"></iframe>
+                    </div>
+                </div>
+
+            </div>
+            <div class="seperator"></div>
+            <!-- Pattern end -->
+            
+            <!-- pattern start -->
+            <div class="pattern-box">
+                <h2 class="heading">Pattern 6: Hollow Right Triangular</h2>
+                <div class="pattern-preview">
+                    <h4>Preview: </h4>
+                    <pre class="preview">        *<br>      * *<br>    *   *<br>  *     *<br>* * * * *</pre>
+                </div>
+                <div class="code-box">
+                    <pre class="code line-numbers language-javascript"><code class="code language-javascript">let num = 5;
+let pattern = "";
+if (num > 1) {
+    for (let i = 1; i <=num; i++) {
+        for (let j = 1; j <= (num-i); j++) {
+            pattern += "  "
+        }
+
+        for (let k = 1; k <= i; k++) {
+            if (k==1 || k==i || i==num) {
+                pattern += "* "
+            }
+            else{
+                pattern += "  "
+            }
+        }
+        pattern += "\n"
+    }
+    console.log(pattern);
+}
+else {
+    pattern = "Number must be greater than 1 to print star pattern."
+}
+
+</code></pre>
+                </div>
+
+                <button class="run-now">
+                    Run <span>&rAarr;</span>
+                </button>
+                <div class="runner-container">
+                    <div class="close-runner">
+                        <button class="close-runner-container"></button>
+                    </div>
+                    <div class="runner-content ">
+                        <iframe src="./patterns/pattern_right_triangle_hollow.html" frameborder="0" class="run-frame"></iframe>
+                    </div>
+                </div>
+
+            </div>
+            <div class="seperator"></div>
+            <!-- Pattern end -->
+            
+            <!-- pattern start -->
+            <div class="pattern-box">
+                <h2 class="heading">Pattern 7: Reversed Right Triangular</h2>
+                <div class="pattern-preview">
+                    <h4>Preview: </h4>
+                    <pre class="preview">* * * * *<br>  * * * *<br>    * * *<br>      * *<br>        *</pre>
+                </div>
+                <div class="code-box">
+                    <pre class="code line-numbers language-javascript"><code class="code language-javascript">let num = 5;
+let pattern = "";
+if (num > 1) {
+    for (let i = num; i >=1; i--) {
+        for (let j = 1; j <= (num-i); j++) {
+            pattern += "  "
+        }
+
+        for (let k = 1; k <= i; k++) {
+            pattern += "* "
+        }
+        pattern += "\n"
+    }
+    console.log(pattern);
+}
+else {
+    pattern = "Number must be greater than 1 to print star pattern."
+}
+
+</code></pre>
+                </div>
+
+                <button class="run-now">
+                    Run <span>&rAarr;</span>
+                </button>
+                <div class="runner-container">
+                    <div class="close-runner">
+                        <button class="close-runner-container"></button>
+                    </div>
+                    <div class="runner-content ">
+                        <iframe src="./patterns/pattern_right_triangle_reverse.html" frameborder="0" class="run-frame"></iframe>
+                    </div>
+                </div>
+
+            </div>
+            <div class="seperator"></div>
+            <!-- Pattern end -->
+            
+            <!-- pattern start -->
+            <div class="pattern-box">
+                <h2 class="heading">Pattern 8: Reversed Hollow Right Triangular</h2>
+                <div class="pattern-preview">
+                    <h4>Preview: </h4>
+                    <pre class="preview">* * * * *<br>  *     *<br>    *   *<br>      * *<br>        *</pre>
+                </div>
+                <div class="code-box">
+                    <pre class="code line-numbers language-javascript"><code class="code language-javascript">let num = 5;
+let pattern = "";
+if (num > 1) {
+    for (let i = num; i >=1; i--) {
+        for (let j = 1; j <= (num-i); j++) {
+            pattern += "  "
+        }
+
+        for (let k = 1; k <= i; k++) {
+            if (i==num || k==1 || k==i) {
+                pattern += "* "
+            }
+            else{
+            pattern += "  "
+            }
+        }
+        pattern += "\n"
+    }
+    console.log(pattern);
+}
+else {
+    pattern = "Number must be greater than 1 to print star pattern."
+}
+
+</code></pre>
+                </div>
+
+                <button class="run-now">
+                    Run <span>&rAarr;</span>
+                </button>
+                <div class="runner-container">
+                    <div class="close-runner">
+                        <button class="close-runner-container"></button>
+                    </div>
+                    <div class="runner-content ">
+                        <iframe src="./patterns/pattern_right_triangle_reverse_hollow.html" frameborder="0" class="run-frame"></iframe>
                     </div>
                 </div>
 
