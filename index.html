@@ -385,6 +385,190 @@ else {
             <div class="seperator"></div>
             <!-- Pattern end -->
             
+            <!-- pattern start -->
+            <div class="pattern-box">
+                <h2 class="heading">Pattern 9: Center Triangular</h2>
+                <div class="pattern-preview">
+                    <h4>Preview: </h4>
+                    <pre class="preview">        *<br>      * * *<br>    * * * * *<br>  * * * * * * *<br>* * * * * * * * *</pre>
+                </div>
+                <div class="code-box">
+                    <pre class="code line-numbers language-javascript"><code class="code language-javascript">let num = 5;
+let pattern = "";
+if (num > 1) {
+    for (let i = 1; i <= num; i++) {
+        for (let j = 1; j <= (num - i); j++) {
+            pattern += "  "
+        }
+        for (let k = 1; k <= ((2 * i) - 1); k++) {
+            pattern += "* "
+        }
+        pattern += "\n"
+    }
+    console.log(pattern);
+}
+else {
+    pattern = "Number must be greater than 1 to print star pattern."
+}
+
+</code></pre>
+                </div>
+
+                <button class="run-now">
+                    Run <span>&rAarr;</span>
+                </button>
+                <div class="runner-container">
+                    <div class="close-runner">
+                        <button class="close-runner-container"></button>
+                    </div>
+                    <div class="runner-content ">
+                        <iframe src="./patterns/pattern_center.html" frameborder="0" class="run-frame"></iframe>
+                    </div>
+                </div>
+
+            </div>
+            <div class="seperator"></div>
+            <!-- Pattern end -->
+            
+            <!-- pattern start -->
+            <div class="pattern-box">
+                <h2 class="heading">Pattern 10: Hollow Center Triangular</h2>
+                <div class="pattern-preview">
+                    <h4>Preview: </h4>
+                    <pre class="preview">        *<br>      *   *<br>    *       *<br>  *           *<br>* * * * * * * * *</pre>
+                </div>
+                <div class="code-box">
+                    <pre class="code line-numbers language-javascript"><code class="code language-javascript">let num = 5;
+let pattern = "";
+if (num > 1) {
+    for (let i = 1; i <= num; i++) {
+        for (let j = 1; j <= (num - i); j++) {
+            pattern += "  "
+        }
+        for (let k = 1; k <= ((2 * i) - 1); k++) {
+            if (k==1 || k==((2*i)-1) || i==num) {
+                pattern += "* "
+            } else {
+                pattern += "  "
+            }
+        }
+        pattern += "\n"
+    }
+    console.log(pattern);
+}
+else {
+    pattern = "Number must be greater than 1 to print star pattern."
+}
+
+</code></pre>
+                </div>
+
+                <button class="run-now">
+                    Run <span>&rAarr;</span>
+                </button>
+                <div class="runner-container">
+                    <div class="close-runner">
+                        <button class="close-runner-container"></button>
+                    </div>
+                    <div class="runner-content ">
+                        <iframe src="./patterns/pattern_center_hollow.html" frameborder="0" class="run-frame"></iframe>
+                    </div>
+                </div>
+
+            </div>
+            <div class="seperator"></div>
+            <!-- Pattern end -->
+            
+            <!-- pattern start -->
+            <div class="pattern-box">
+                <h2 class="heading">Pattern 11: Reversed Center Triangular</h2>
+                <div class="pattern-preview">
+                    <h4>Preview: </h4>
+                    <pre class="preview">* * * * * * * * *<br>  * * * * * * *<br>    * * * * *<br>      * * *<br>        * </pre>
+                </div>
+                <div class="code-box">
+                    <pre class="code line-numbers language-javascript"><code class="code language-javascript">let num = 5;
+let pattern = "";
+if (num > 1) {
+    for (let i = num; i >=1; i--) {
+        for (let j = 1; j <= (num - i); j++) {
+            pattern += "  "
+        }
+        for (let k = 1; k <= ((2 * i) - 1); k++) {
+            pattern += "* "
+        }
+        pattern += "\n"
+    }
+    console.log(pattern);
+}
+else {
+    pattern = "Number must be greater than 1 to print star pattern."
+}
+
+</code></pre>
+                </div>
+
+                <button class="run-now">
+                    Run <span>&rAarr;</span>
+                </button>
+                <div class="runner-container">
+                    <div class="close-runner">
+                        <button class="close-runner-container"></button>
+                    </div>
+                    <div class="runner-content ">
+                        <iframe src="./patterns/pattern_center_reverse.html" frameborder="0" class="run-frame"></iframe>
+                    </div>
+                </div>
+
+            </div>
+            <div class="seperator"></div>
+            <!-- Pattern end -->
+            
+            <!-- pattern start -->
+            <div class="pattern-box">
+                <h2 class="heading">Pattern 12: Reversed Hollow Center Triangular</h2>
+                <div class="pattern-preview">
+                    <h4>Preview: </h4>
+                    <pre class="preview">* * * * * * * * *<br>  *           *<br>    *       *<br>      *   *<br>        * </pre>
+                </div>
+                <div class="code-box">
+                    <pre class="code line-numbers language-javascript"><code class="code language-javascript">let num = 5;
+let pattern = "";
+if (num > 1) {
+    for (let i = num; i >=1; i--) {
+        for (let j = 1; j <= (num - i); j++) {
+            pattern += "  "
+        }
+        for (let k = 1; k <= ((2 * i) - 1); k++) {
+            pattern += "* "
+        }
+        pattern += "\n"
+    }
+    console.log(pattern);
+}
+else {
+    pattern = "Number must be greater than 1 to print star pattern."
+}
+
+</code></pre>
+                </div>
+
+                <button class="run-now">
+                    Run <span>&rAarr;</span>
+                </button>
+                <div class="runner-container">
+                    <div class="close-runner">
+                        <button class="close-runner-container"></button>
+                    </div>
+                    <div class="runner-content ">
+                        <iframe src="./patterns/pattern_center_reverse_hollow.html" frameborder="0" class="run-frame"></iframe>
+                    </div>
+                </div>
+
+            </div>
+            <div class="seperator"></div>
+            <!-- Pattern end -->
+            
         </div>
         <div class="side-content">
             this is side content
