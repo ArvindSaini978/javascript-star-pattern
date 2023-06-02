@@ -1,13 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Star Patterns with JavaScript</title>
+    <link rel="stylesheet" href="./prismjs/prism.css">
+    <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
-    <h1>Star pattern with JavaScript.</h1>
-    <h2>Development in progress</h2>
+    <h1 class="title">Star patterns with JavaScript:</h1>
+    <div class="container">
+        <div class="patterns">
+            <!-- pattern start -->
+            <div class="pattern-box">
+                <h2 class="heading">Pattern 1: Left triangular</h2>
+                <div class="pattern-preview">
+                    <h4>Preview: </h4>
+                    <div class="preview">
+                        *<br>* *<br>* * *<br>* * * *<br>* * * * *<br>
+                    </div>
+                </div>
+                <div class="code-box">
+                    <pre class="code line-numbers language-javascript"><code class="code language-javascript">let num = 5;
+let pattern = "";
+if (num > 1) {
+    for (let i = 1; i <= num; i++) {
+        for (let j = 1; j <= i; j++) {
+            pattern += "* "
+        }
+        pattern += "\n"
+    }
+    console.log(pattern);
+}
+else {
+    pattern = "Number must be greater than 1 to print star pattern."
+}
+
+</code></pre>
+                </div>
+
+                <button class="run-now">
+                    Run <span>&rAarr;</span>
+                </button>
+                <div class="runner-container">
+                    <div class="close-runner">
+                        <button class="close-runner-container"></button>
+                    </div>
+                    <div class="runner-content ">
+                        <iframe src="./patterns/pattern_left_triangle.html" frameborder="0" class="run-frame"></iframe>
+                    </div>
+                </div>
+
+            </div>
+            <div class="seperator"></div>
+            <!-- Pattern end -->
+            
+            <!-- pattern start -->
+            <div class="pattern-box">
+                <h2 class="heading">Pattern 1: Left triangular</h2>
+                <div class="pattern-preview">
+                    <h4>Preview: </h4>
+                    <div class="preview">
+                        *<br>* *<br>* * *<br>* * * *<br>* * * * *<br>
+                    </div>
+                </div>
+                <div class="code-box">
+                    <pre class="code line-numbers language-javascript"><code class="code language-javascript">let num = 5;
+let pattern = "";
+if (num > 1) {
+    for (let i = 1; i <= num; i++) {
+        for (let j = 1; j <= i; j++) {
+            pattern += "* "
+        }
+        pattern += "\n"
+    }
+    console.log(pattern);
+}
+else {
+    pattern = "Number must be greater than 1 to print star pattern."
+}
+
+</code></pre>
+                </div>
+
+                <button class="run-now">
+                    Run <span>&rAarr;</span>
+                </button>
+                <div class="runner-container">
+                    <div class="close-runner">
+                        <button class="close-runner-container"></button>
+                    </div>
+                    <div class="runner-content ">
+                        <iframe src="./patterns/pattern_left_triangle_hollow.html" frameborder="0" class="run-frame"></iframe>
+                    </div>
+                </div>
+
+            </div>
+            <div class="seperator"></div>
+            <!-- Pattern end -->
+            
+        </div>
+        <div class="side-content">
+            this is side content
+        </div>
+    </div>
+
+
+
+
+    <script src="./prismjs/prism.js"></script>
+    <script src="./main.js"></script>
 </body>
+
 </html>
