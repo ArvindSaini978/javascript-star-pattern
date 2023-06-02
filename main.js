@@ -1,5 +1,6 @@
 const closeRunnerContainerBtn = document.querySelectorAll(".close-runner-container");
 const runnerContainer = document.querySelectorAll(".runner-container");
+const iframes = document.querySelectorAll("iframe");
 const runNow = document.querySelectorAll(".run-now");
 
 runNow.forEach((element, index) => {
@@ -11,6 +12,7 @@ runNow.forEach((element, index) => {
 closeRunnerContainerBtn.forEach((closeBtn, index) => {
     closeBtn.onclick = ()=>{
         runnerContainer[index].classList.remove("active");
+        iframes[index].src = iframes[index].src;
     }
 });
 
