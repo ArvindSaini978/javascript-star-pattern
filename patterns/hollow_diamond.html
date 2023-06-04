@@ -34,9 +34,8 @@
     btn.addEventListener("click", async () => {
         result.innerHTML = ""
         if (num > 1) {
-            if (num % 2 == 0) {
-                for (let i = 1; i <= num/2; i++) {
-                    for (let j = 1; j <= ((num/2) - i); j++) {
+                for (let i = 1; i <= num; i++) {
+                    for (let j = 1; j <= ((num) - i); j++) {
                         result.innerHTML += "&nbsp;&nbsp;&nbsp;"
                     }
                     for (let k = 1; k <= ((2 * i) - 1); k++) {
@@ -48,8 +47,8 @@
                     }
                     result.innerHTML += "<br> "
                 }
-                for (let i = num/2; i >=1; i--) {
-                    for (let j = 1; j <= ((num/2) - i); j++) {
+                for (let i = num-1; i >=1; i--) {
+                    for (let j = 1; j <= ((num) - i); j++) {
                         result.innerHTML += "&nbsp;&nbsp;&nbsp;"
                     }
                     for (let k = 1; k <= ((2 * i) - 1); k++) {
@@ -61,42 +60,6 @@
                     }
                     result.innerHTML += "<br> "
                 }
-            }
-            if (num % 2 != 0) {
-                for (let i = 1; i <= (num-1)/2; i++) {
-                    for (let j = 1; j <= (((num+1)/2) - i); j++) {
-                        result.innerHTML += "&nbsp;&nbsp;&nbsp;"
-                    }
-                    for (let k = 1; k <= ((2 * i) - 1); k++) {
-                        if (k==1 || k==((2 * i) - 1)) {
-                            result.innerHTML += "* "
-                        } else {
-                            result.innerHTML += "&nbsp;&nbsp;&nbsp;"
-                        }
-                    }
-                    result.innerHTML += "<br> "
-                }
-                for (let i = 0; i < (num); i++) {
-                    if (i==0 || i==num-1) {
-                            result.innerHTML += "* "
-                        } else {
-                            result.innerHTML += "&nbsp;&nbsp;&nbsp;"
-                        }
-                }result.innerHTML += "<br> "
-                for (let i = (num-1)/2; i >=1; i--) {
-                    for (let j = 1; j <= (((num+1)/2) - i); j++) {
-                        result.innerHTML += "&nbsp;&nbsp;&nbsp;"
-                    }
-                    for (let k = 1; k <= ((2 * i) - 1); k++) {
-                        if (k==1 || k==((2 * i) - 1)) {
-                            result.innerHTML += "* "
-                        } else {
-                            result.innerHTML += "&nbsp;&nbsp;&nbsp;"
-                        }
-                    }
-                    result.innerHTML += "<br> "
-                }
-            }
         }
         else {
             result.innerHTML = "Number must be greater than 1 to print star pattern."
