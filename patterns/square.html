@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reverse Centered Star Pattern </title>
+    <title>Square Star Pattern </title>
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <h1 class="title">Print <span>'center reverse'</span> star pattern: </h1>
+    <h1 class="title"><span>'Square'</span> star pattern: </h1>
     <div class="inpt">
         <input type="number" name="num" id="num" class="num" min="2" value="15" placeholder="Enter a number">
         <button id="btn">Print</button>
@@ -34,12 +34,9 @@
     btn.addEventListener("click", async () => {
         result.innerHTML = ""
         if (num > 1) {
-            for (let i = num; i >=1; i--) {
-                for (let j = 1; j <= (num - i); j++) {
-                    result.innerHTML += "&nbsp;&nbsp;&nbsp;"
-                }
-                for (let k = 1; k <= ((2 * i) - 1); k++) {
-                    result.innerHTML += "* "
+            for (let i = 1; i <=num; i++) {
+                for (let j = 1; j <= (num); j++) {
+                    result.innerHTML += "* &nbsp;"
                 }
                 result.innerHTML += "<br> "
             }

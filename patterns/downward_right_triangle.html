@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Right Reverse Triangle Hollow Star Pattern</title>
+    <title>Downward Right Triangle Star Pattern</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <h1 class="title">Print <span>'right triangle reverse hollow'</span> star pattern: </h1>
+    <h1 class="title"><span>'Downward Right Triangle'</span> star pattern: </h1>
     <div class="inpt">
         <input type="number" name="num" id="num" class="num" min="2" value="15" placeholder="Enter a number">
         <button id="btn">Print</button>
@@ -40,12 +40,7 @@
                 }
 
                 for (let k = 1; k <= i; k++) {
-                    if (i==num || k==1 || k==i) {
-                        result.innerHTML += "* "
-                    }
-                    else{
-                    result.innerHTML += "&nbsp;&nbsp;&nbsp;"
-                    }
+                    result.innerHTML += "* "
                 }
                 result.innerHTML += "<br> "
             }
