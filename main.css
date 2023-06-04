@@ -57,10 +57,10 @@ body {
 }
 
 .preview {
-    padding: 10px;
+    padding: 16px;
     border-radius: 8px;
     background: #f0f9ed;
-    box-shadow: 0px 6px 12px -3px #cbbebef5;
+    box-shadow: 0px 3px 7px -4px #cbbebef5;
     font-size: 16px;
     font-weight: 500;
 }
