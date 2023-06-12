@@ -22,4 +22,12 @@ window.onload = ()=>{
         document.body.classList.add("active");
     }, 500);
 }
+document.onscroll = (e)=>{
+    if (window.scrollY>64) {
+        document.getElementById("navbar").classList.add("active")
+    }
+    if (window.scrollY<64) {
+        document.getElementById("navbar").classList.remove("active")
+    }
+}
 
