@@ -626,7 +626,7 @@ body::-webkit-scrollbar-thumb:active{
         font-size: 17px;
     }
 }
-@media (max-width: 353px) {
+@media (max-width: 360px) {
     .code{
         max-height: 360px;
     }
