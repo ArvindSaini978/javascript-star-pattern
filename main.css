@@ -645,11 +645,6 @@ body::-webkit-scrollbar-thumb:active{
     .pattern-preview h4{
         font-size: 16px;
     }
-    .preview{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
     .footer-link-h2, .footer-link-2 h2, .footer-link-3 h2{
         font-size: 20px;
     }
