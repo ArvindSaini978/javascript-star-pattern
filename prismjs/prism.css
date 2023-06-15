@@ -672,3 +672,18 @@ div.code-toolbar > .toolbar > .toolbar-item > span:focus {
 	opacity: 1;
 }
 
+@media (max-width: 768px) {
+	div.code-toolbar > .toolbar{
+		opacity: 1;
+	}
+}
+@media (max-width: 640px) {
+	code[class*="language-"], pre[class*="language-"]{
+		font-size: 15px;
+	}
+}
+@media (max-width: 353px) {
+	code[class*="language-"], pre[class*="language-"]{
+		font-size: 14px;
+	}
+}
