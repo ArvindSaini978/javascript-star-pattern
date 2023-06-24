@@ -394,7 +394,7 @@ body.active{
     overflow: hidden;
 }
 .runner-container.active{
-    height: 92%;
+    height: 100%;
     padding: 16px 16px 0px 16px;
 }
 .close-runner{
@@ -671,9 +671,6 @@ body::-webkit-scrollbar-thumb:active{
     }
     .patterns{
         width: 100%;
-    }
-    .runner-container.active{
-        height: 100%;
     }
     .footer-link-cont{
         grid-template-columns: 1fr 1fr;
