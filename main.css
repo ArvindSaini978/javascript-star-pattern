@@ -480,10 +480,10 @@ body.active{
 .side-links-cont{
     width: 100%;
     height: 84%;
-    /* height: 92%; */
     display: flex;
     flex-direction: column;
     padding: 10px ;
+    padding-bottom: 32px;
     overflow: auto;
     overflow-x: hidden;
 }

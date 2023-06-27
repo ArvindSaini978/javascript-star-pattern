@@ -7,6 +7,8 @@ const toggleSidebar = document.getElementById("burger");
 const sidebar = document.getElementById("sidebar");
 const closeSidebar = document.getElementById("closeSidebar");
 const sidebarLinksCont = document.getElementById("sidebarLinksCont");
+const anchors = document.getElementsByClassName("side-link");
+const mobileAnchors = document.getElementsByClassName("mobileSidebarLink");
 
 toggleSidebar.addEventListener("click", ()=>{
     setTimeout(() => {
@@ -73,3 +75,25 @@ window.onresize = ()=>{
     }
 }
 
+for (let index = 0; index < anchors.length; index++) {
+    const element = anchors[index];
+    element.addEventListener("click", (e)=>{
+        e.preventDefault();
+        let id = (e.target.hash).slice(1);
+        const currentEle = document.getElementById(id);
+        location.hash = "";
+        window.scrollTo(window.scrollX, (currentEle.offsetTop-36));
+    })
+    
+}
+for (let index = 0; index < mobileAnchors.length; index++) {
+    const element = mobileAnchors[index];
+    element.addEventListener("click", (e)=>{
+        e.preventDefault();
+        let id = (e.target.hash).slice(1);
+        const currentEle = document.getElementById(id);
+        location.hash = "";
+        window.scrollTo(window.scrollX, (currentEle.offsetTop-36));
+    })
+    
+}
