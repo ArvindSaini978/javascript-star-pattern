@@ -48,6 +48,12 @@ window.onload = ()=>{
         loader.style.display = "none";
         document.body.classList.add("active");
     }, 500);
+    if (window.scrollY>64) {
+        document.getElementById("navbar").classList.add("active");
+    }
+    if (window.scrollY<64) {
+        document.getElementById("navbar").classList.remove("active");
+    }
 }
 document.onscroll = (e)=>{
     if (window.scrollY>64) {
