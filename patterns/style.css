@@ -1,3 +1,7 @@
+@font-face {
+    font-family: cursive;
+    src: url(../assets/comic.ttf);
+}
 * {
     margin: 0px;
     padding: 0px;

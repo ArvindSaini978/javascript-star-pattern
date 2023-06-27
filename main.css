@@ -479,7 +479,8 @@ body.active{
 }
 .side-links-cont{
     width: 100%;
-    height: 92%;
+    height: 84%;
+    /* height: 92%; */
     display: flex;
     flex-direction: column;
     padding: 10px ;
@@ -491,7 +492,8 @@ body.active{
     color: #4d4de3;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-bottom: 1px;
-    padding: 2px 6px;
+    padding: 5px 10px;
+    /* padding: 2px 6px; */
     border-radius: 6px;
 }
 .side-link:hover{
@@ -500,7 +502,8 @@ body.active{
 }
 .side-link:active{
     background: #f1ededc8;
-    color: rgb(0, 0, 172);
+    color: rgb(8, 176, 109);
+    text-decoration:underline;
 }
 
 .footer{
