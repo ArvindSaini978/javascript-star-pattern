@@ -310,7 +310,7 @@ body.active{
 }
 
 .code::-webkit-scrollbar-thumb {
-    background-color: #141414;
+    background-color: #14141400;
     border-radius: 20px;
 }
 
@@ -319,7 +319,7 @@ body.active{
 }
 
 .code::-webkit-scrollbar-thumb:hover {
-    background-color: rgb(214, 227, 214);
+    background-color: rgb(189, 206, 190);
     border-radius: 10px;
 }
 

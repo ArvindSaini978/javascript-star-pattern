@@ -62,15 +62,15 @@
                 </div>
                 <div class="code-box">
                     <pre class="code line-numbers language-javascript"><code class="code language-javascript">let num = 5;
-let pattern = "";
-if (num > 1) {
-    for (let i = 1; i <= num; i++) {
-        for (let j = 1; j <= i; j++) {
-            pattern += "* ";
+let pattern = "";    //pattern string
+if (num > 1) {      //no star pattern for 0 or negative numbers.
+    for (let i = 1; i <= num; i++) {    //first 'for loop' for horizontal lines
+        for (let j = 1; j <= i; j++) {      //second 'for loop' to print star
+            pattern += "* ";    //adding * to pattern string
         }
-        pattern += "\n";
+        pattern += "\n";    //new line after row completion
     }
-    console.log(pattern);
+    console.log(pattern);   //printing star to console
 }
 else {
     pattern = "Number must be greater than 1 to print star pattern.";
@@ -104,20 +104,20 @@ else {
                 </div>
                 <div class="code-box">
                     <pre class="code line-numbers language-javascript"><code class="code language-javascript">let num = 5;
-let pattern = "";
-if (num > 1) {
-    for (let i = 1; i <= num; i++) {
-        for (let j = 1; j <= i; j++) {
-            if (j==1 || j==i || i==num) {
+let pattern = "";    //pattern string
+if (num > 1) {      //no star pattern for 0 or negative numbers
+    for (let i = 1; i <= num; i++) {    //first 'for loop' for horizontal lines
+        for (let j = 1; j <= i; j++) {      //second 'for loop' to print star and space between them
+            if (j==1 || j==i || i==num) {   //condition to make it hollow
                 pattern += "* ";
             }
             else{
                 pattern += "  ";
             }
         }
-        pattern += "\n";
+        pattern += "\n";    //new line after row completion
     }
-    console.log(pattern);
+    console.log(pattern);   //printing star to console
 }
 else {
     pattern = "Number must be greater than 1 to print star pattern.";
@@ -152,15 +152,15 @@ else {
                 </div>
                 <div class="code-box">
                     <pre class="code line-numbers language-javascript"><code class="code language-javascript">let num = 5;
-let pattern = "";
-if (num > 1) {
-    for (let i = 1; i <= num; i++) {
-        for (let j = 0; j <= (num-i); j++) {
+let pattern = "";    //pattern string
+if (num > 1) {      //no star pattern for 0 or negative numbers.
+    for (let i = 1; i <= num; i++) {    //first 'for loop' for horizontal lines
+        for (let j = 0; j <= (num-i); j++) {    //second 'for loop' for opposite pattern; see loop condition
             pattern += "* ";
         }
-        pattern += "\n";
+        pattern += "\n";    //new line after row completion
     }
-    console.log(pattern);
+    console.log(pattern);   //printing star to console
 }
 else {
     pattern = "Number must be greater than 1 to print star pattern.";
@@ -195,19 +195,19 @@ else {
                 </div>
                 <div class="code-box">
                     <pre class="code line-numbers language-javascript"><code class="code language-javascript">let num = 5;
-let pattern = "";
-if (num > 1) {
-    for (let i = 1; i <= num; i++) {
-        for (let j = 0; j <= (num-i); j++) {
-            if (j==0 || j==(num-i) || i==1) {
+let pattern = "";    //pattern string
+if (num > 1) {      //no star pattern for 0 or negative numbers.
+    for (let i = 1; i <= num; i++) {    //first 'for loop' for horizontal lines
+        for (let j = 0; j <= (num-i); j++) {    //second 'for loop' for opposite pattern
+            if (j==0 || j==(num-i) || i==1) {   //condition to make pattern hollow
                 pattern += "* ";
             } else {
-                pattern += "  ";
+                pattern += "  ";    // spaces to make pattern hollow
             }
         }
-        pattern += "\n";
+        pattern += "\n";    //new line after row completion
     }
-    console.log(pattern);
+    console.log(pattern);   //printing star to console
 }
 else {
     pattern = "Number must be greater than 1 to print star pattern.";
@@ -242,19 +242,19 @@ else {
                 </div>
                 <div class="code-box">
                     <pre class="code line-numbers language-javascript"><code class="code language-javascript">let num = 5;
-let pattern = "";
-if (num > 1) {
-    for (let i = 1; i <=num; i++) {
-        for (let j = 1; j <= (num-i); j++) {
+let pattern = "";    //pattern string
+if (num > 1) {      //no star pattern for 0 or negative numbers.
+    for (let i = 1; i <=num; i++) {    //first 'for loop' for horizontal lines
+        for (let j = 1; j <= (num-i); j++) {    //second 'for loop' to add 'spaces' before pattern
             pattern += "  ";
         }
 
-        for (let k = 1; k <= i; k++) {
+        for (let k = 1; k <= i; k++) {      //third 'for loop' to add * to pattern string
             pattern += "* ";
         }
-        pattern += "\n";
+        pattern += "\n";    //new line after row completion
     }
-    console.log(pattern);
+    console.log(pattern);   //printing star to console
 }
 else {
     pattern = "Number must be greater than 1 to print star pattern.";
@@ -288,24 +288,24 @@ else {
                 </div>
                 <div class="code-box">
                     <pre class="code line-numbers language-javascript"><code class="code language-javascript">let num = 5;
-let pattern = "";
-if (num > 1) {
-    for (let i = 1; i <=num; i++) {
-        for (let j = 1; j <= (num-i); j++) {
+let pattern = "";    //pattern string
+if (num > 1) {      //no star pattern for 0 or negative numbers.
+    for (let i = 1; i <=num; i++) {    //first 'for loop' for horizontal lines
+        for (let j = 1; j <= (num-i); j++) {    //second 'for loop' to add 'spaces' before pattern
             pattern += "  ";
         }
 
-        for (let k = 1; k <= i; k++) {
-            if (k==1 || k==i || i==num) {
-                pattern += "* ";
+        for (let k = 1; k <= i; k++) {      //third 'for loop' to add * to pattern string
+            if (k==1 || k==i || i==num) {   //third loop condition to make pattern hollow
+                pattern += "* ";    //adding outer * to pattern string
             }
             else{
-                pattern += "  ";
+                pattern += "  ";    //adding spaces between * to pattern string
             }
         }
-        pattern += "\n";
+        pattern += "\n";    //new line after row completion
     }
-    console.log(pattern);
+    console.log(pattern);   //printing star to console
 }
 else {
     pattern = "Number must be greater than 1 to print star pattern.";
@@ -340,19 +340,19 @@ else {
                 </div>
                 <div class="code-box">
                     <pre class="code line-numbers language-javascript"><code class="code language-javascript">let num = 5;
-let pattern = "";
-if (num > 1) {
-    for (let i = num; i >=1; i--) {
-        for (let j = 1; j <= (num-i); j++) {
+let pattern = "";    //pattern string
+if (num > 1) {      //no star pattern for 0 or negative numbers.
+    for (let i = num; i >=1; i--) {     //first 'for loop' for horizontal lines and reversed pattern
+        for (let j = 1; j <= (num-i); j++) {    //second 'for loop' to add 'spaces' before pattern
             pattern += "  ";
         }
 
-        for (let k = 1; k <= i; k++) {
+        for (let k = 1; k <= i; k++) {      //third 'for loop' to add * to pattern string
             pattern += "* ";
         }
-        pattern += "\n";
+        pattern += "\n";    //new line after row completion
     }
-    console.log(pattern);
+    console.log(pattern);   //printing star to console
 }
 else {
     pattern = "Number must be greater than 1 to print star pattern.";
@@ -387,24 +387,24 @@ else {
                 </div>
                 <div class="code-box">
                     <pre class="code line-numbers language-javascript"><code class="code language-javascript">let num = 5;
-let pattern = "";
-if (num > 1) {
-    for (let i = num; i >=1; i--) {
-        for (let j = 1; j <= (num-i); j++) {
+let pattern = "";    //pattern string
+if (num > 1) {      //no star pattern for 0 or negative numbers.
+    for (let i = num; i >=1; i--) {     //first 'for loop' for horizontal lines and reversed pattern
+        for (let j = 1; j <= (num-i); j++) {    //second 'for loop' to add 'spaces' before pattern
             pattern += "  ";
         }
 
-        for (let k = 1; k <= i; k++) {
-            if (i==num || k==1 || k==i) {
-                pattern += "* ";
+        for (let k = 1; k <= i; k++) {      //third 'for loop' to add * to pattern string
+            if (i==num || k==1 || k==i) {   //condition to make pattern hollow
+                pattern += "* ";    //adding outer * to pattern string
             }
             else{
-            pattern += "  ";
+            pattern += "  ";        //adding spaces between * to pattern string
             }
         }
-        pattern += "\n";
+        pattern += "\n";    //new line after row completion
     }
-    console.log(pattern);
+    console.log(pattern);   //printing star to console
 }
 else {
     pattern = "Number must be greater than 1 to print star pattern.";
@@ -440,18 +440,18 @@ else {
                 </div>
                 <div class="code-box">
                     <pre class="code line-numbers language-javascript"><code class="code language-javascript">let num = 5;
-let pattern = "";
-if (num > 1) {
-    for (let i = 1; i <= num; i++) {
-        for (let j = 1; j <= (num - i); j++) {
+let pattern = "";    //pattern string
+if (num > 1) {      //no star pattern for 0 or negative numbers.
+    for (let i = 1; i <= num; i++) {     //first 'for loop' for horizontal lines
+        for (let j = 1; j <= (num - i); j++) {    //second 'for loop' to add 'spaces' before pattern
             pattern += "  ";
         }
-        for (let k = 1; k <= ((2 * i) - 1); k++) {
+        for (let k = 1; k <= ((2 * i) - 1); k++) {      //third 'for loop' to add * to pattern string
             pattern += "* ";
         }
-        pattern += "\n";
+        pattern += "\n";    //new line after row completion
     }
-    console.log(pattern);
+    console.log(pattern);   //printing star to console
 }
 else {
     pattern = "Number must be greater than 1 to print star pattern.";
@@ -486,22 +486,22 @@ else {
                 </div>
                 <div class="code-box">
                     <pre class="code line-numbers language-javascript"><code class="code language-javascript">let num = 5;
-let pattern = "";
-if (num > 1) {
-    for (let i = 1; i <= num; i++) {
-        for (let j = 1; j <= (num - i); j++) {
+let pattern = "";    //pattern string
+if (num > 1) {      //no star pattern for 0 or negative numbers.
+    for (let i = 1; i <= num; i++) {    //first 'for loop' for horizontal lines
+        for (let j = 1; j <= (num - i); j++) {    //second 'for loop' to add 'spaces' before pattern
             pattern += "  ";
         }
-        for (let k = 1; k <= ((2 * i) - 1); k++) {
-            if (k==1 || k==((2*i)-1) || i==num) {
-                pattern += "* ";
+        for (let k = 1; k <= ((2 * i) - 1); k++) {      //third 'for loop' to add * to pattern string
+            if (k==1 || k==((2*i)-1) || i==num) {       //condition to make pattern hollow
+                pattern += "* ";    //adding outer * to pattern string
             } else {
-                pattern += "  ";
+                pattern += "  ";    //adding spaces between * to pattern string to make it hollow
             }
         }
-        pattern += "\n";
+        pattern += "\n";    //new line after row completion
     }
-    console.log(pattern);
+    console.log(pattern);   //printing star to console
 }
 else {
     pattern = "Number must be greater than 1 to print star pattern.";
@@ -536,18 +536,18 @@ else {
                 </div>
                 <div class="code-box">
                     <pre class="code line-numbers language-javascript"><code class="code language-javascript">let num = 5;
-let pattern = "";
-if (num > 1) {
-    for (let i = num; i >=1; i--) {
-        for (let j = 1; j <= (num - i); j++) {
+let pattern = "";    //pattern string
+if (num > 1) {      //no star pattern for 0 or negative numbers.
+    for (let i = num; i >=1; i--) {    //first 'for loop' for horizontal lines  and reversed pattern
+        for (let j = 1; j <= (num - i); j++) {      //second 'for loop' to add 'spaces' before pattern
             pattern += "  ";
         }
-        for (let k = 1; k <= ((2 * i) - 1); k++) {
+        for (let k = 1; k <= ((2 * i) - 1); k++) {      //third 'for loop' to add * to pattern string
             pattern += "* ";
         }
-        pattern += "\n";
+        pattern += "\n";    //new line after row completion
     }
-    console.log(pattern);
+    console.log(pattern);   //printing star to console
 }
 else {
     pattern = "Number must be greater than 1 to print star pattern.";
@@ -582,18 +582,18 @@ else {
                 </div>
                 <div class="code-box">
                     <pre class="code line-numbers language-javascript"><code class="code language-javascript">let num = 5;
-let pattern = "";
-if (num > 1) {
-    for (let i = num; i >=1; i--) {
-        for (let j = 1; j <= (num - i); j++) {
+let pattern = "";    //pattern string
+if (num > 1) {      //no star pattern for 0 or negative numbers.
+    for (let i = num; i >=1; i--) {    //first 'for loop' for horizontal lines  and reversed pattern
+        for (let j = 1; j <= (num - i); j++) {      //second 'for loop' to add 'spaces' before pattern
             pattern += "  ";
         }
-        for (let k = 1; k <= ((2 * i) - 1); k++) {
+        for (let k = 1; k <= ((2 * i) - 1); k++) {      //third 'for loop' to add * to pattern string
             pattern += "* ";
         }
-        pattern += "\n";
+        pattern += "\n";    //new line after row completion
     }
-    console.log(pattern);
+    console.log(pattern);   //printing star to console
 }
 else {
     pattern = "Number must be greater than 1 to print star pattern.";
@@ -628,15 +628,15 @@ else {
                 </div>
                 <div class="code-box">
                     <pre class="code line-numbers language-javascript"><code class="code language-javascript">let num = 5;
-let pattern = "";
-if (num > 1) {
-    for (let i = 1; i <=num; i++) {
-        for (let j = 1; j <= (num); j++) {
+let pattern = "";    //pattern string
+if (num > 1) {      //no star pattern for 0 or negative numbers.
+    for (let i = 1; i <=num; i++) {    //first 'for loop' for horizontal lines 
+        for (let j = 1; j <= (num); j++) {      //second 'for loop' to add * to pattern string
             pattern += "* ";
         }
-        pattern += "\n";
+        pattern += "\n";    //new line after row completion
     }
-    console.log(pattern);
+    console.log(pattern);   //printing star to console
 }
 else {
     pattern = "Number must be greater than 1 to print star pattern.";
@@ -670,19 +670,19 @@ else {
                 </div>
                 <div class="code-box">
                     <pre class="code line-numbers language-javascript"><code class="code language-javascript">let num = 5;
-let pattern = "";
-if (num > 1) {
-    for (let i = 1; i <=num; i++) {
-        for (let j = 1; j <= (num); j++) {
-            if (i==1 || i==num || j==1 || j==num) {
-                pattern += "* ";
+let pattern = "";    //pattern string
+if (num > 1) {      //no star pattern for 0 or negative numbers.
+    for (let i = 1; i <=num; i++) {    //first 'for loop' for horizontal lines
+        for (let j = 1; j <= (num); j++) {      //second 'for loop' to add * to pattern string
+            if (i==1 || i==num || j==1 || j==num) {     //condition to make pattern hollow
+                pattern += "* ";    //adding outer * to pattern string
             } else {
-                pattern += "  ";
+                pattern += "  ";    //adding spaces between * to pattern string to make it hollow
             }
         }
-        pattern += "\n";
+        pattern += "\n";    //new line after row completion
     }
-    console.log(pattern);
+    console.log(pattern);   //printing star to console
 }
 else {
     pattern = "Number must be greater than 1 to print star pattern.";
@@ -716,19 +716,19 @@ else {
                 </div>
                 <div class="code-box">
                     <pre class="code line-numbers language-javascript"><code class="code language-javascript">let num = 5;
-let pattern = "";
-if (num > 1) {
-    for (let i = 1; i <=num; i++) {
-        for (let j = 1; j <= (num); j++) {
-            if (i==1 || i==num || j==1 || j==num || i==j || j==(num-i+1)) {
-                pattern += "* ";
+let pattern = "";    //pattern string
+if (num > 1) {      //no star pattern for 0 or negative numbers.
+    for (let i = 1; i <=num; i++) {    //first 'for loop' for horizontal lines 
+        for (let j = 1; j <= (num); j++) {      //second 'for loop' to add * to pattern string
+            if (i==1 || i==num || j==1 || j==num || i==j || j==(num-i+1)) {     //condition to add * to pattern string
+                pattern += "* ";    //adding * to pattern string
             } else {
-                pattern += "  ";
+                pattern += "  ";  //adding spaces between * to pattern string to make it crossed
             }
         }
-        pattern += "\n";
+        pattern += "\n";    //new line after row completion
     }
-    console.log(pattern);
+    console.log(pattern);   //printing star to console
 }
 else {
     pattern = "Number must be greater than 1 to print star pattern.";
@@ -762,27 +762,27 @@ else {
                 </div>
                 <div class="code-box">
                     <pre class="code line-numbers language-javascript"><code class="code language-javascript">let num = 5;
-let pattern = "";
-if (num > 1) {
-    for (let i = 1; i <= num; i++) {
-        for (let j = 1; j <= ((num) - i); j++) {
+let pattern = "";    //pattern string
+if (num > 1) {      //no star pattern for 0 or negative numbers.
+    for (let i = 1; i <= num; i++) {    //first 'for loop' for upward pyramid
+        for (let j = 1; j <= ((num) - i); j++) {    //second 'for loop' to add 'spaces' before upward pyramid
             pattern += "  ";
         }
-        for (let k = 1; k <= ((2 * i) - 1); k++) {
+        for (let k = 1; k <= ((2 * i) - 1); k++) {      //third 'for loop' to add * to upward pyramid
             pattern += "* ";
         }
-        pattern += "\n";
+        pattern += "\n";    //new line after row completion
     }
-    for (let i = num-1; i >=1; i--) {
-        for (let j = 1; j <= ((num) - i); j++) {
+    for (let i = num-1; i >=1; i--) {       //fourth 'for loop' for downward pyramid
+        for (let j = 1; j <= ((num) - i); j++) {    //fifth 'for loop' to add 'spaces' before downward pyramid
             pattern += "  ";
         }
-        for (let k = 1; k <= ((2 * i) - 1); k++) {
+        for (let k = 1; k <= ((2 * i) - 1); k++) {      //sixth 'for loop' to add * to downward pyramid
             pattern += "* ";
         }
-        pattern += "\n";
+        pattern += "\n";    //new line after row completion
     }
-    console.log(pattern);
+    console.log(pattern);   //printing star to console
 }
 else {
 pattern = "Number must be greater than 1 to print star pattern.";
@@ -816,35 +816,35 @@ pattern = "Number must be greater than 1 to print star pattern.";
                 </div>
                 <div class="code-box">
                     <pre class="code line-numbers language-javascript"><code class="code language-javascript">let num = 5;
-let pattern = "";
-if (num > 1) {
-    for (let i = 1; i <= num; i++) {
-        for (let j = 1; j <= ((num) - i); j++) {
+let pattern = "";    //pattern string
+if (num > 1) {      //no star pattern for 0 or negative numbers.
+    for (let i = 1; i <= num; i++) {    //first 'for loop' for upward pyramid
+        for (let j = 1; j <= ((num) - i); j++) {    //second 'for loop' to add 'spaces' before upward pyramid
             pattern += "  ";
         }
-        for (let k = 1; k <= ((2 * i) - 1); k++) {
-            if (k==1 || k==((2 * i) - 1)) {
-                pattern += "* ";
+        for (let k = 1; k <= ((2 * i) - 1); k++) {      //third 'for loop' to add * to upward pyramid
+            if (k==1 || k==((2 * i) - 1)) {     //condition to make upward pyramid hollow
+                pattern += "* ";    //adding outer * to upward pyramid
             } else {
-                pattern += "  ";
+                pattern += "  ";    //adding 'spaces' between * in upward pyramid
             }
         }
-        pattern += "\n";
+        pattern += "\n";    //new line after row completion
     }
-    for (let i = num-1; i >=1; i--) {
-        for (let j = 1; j <= ((num) - i); j++) {
+    for (let i = num-1; i >=1; i--) {       //fourth 'for loop' for downward pyramid
+        for (let j = 1; j <= ((num) - i); j++) {    //fifth 'for loop' to add 'spaces' before downward pyramid
             pattern += "  ";
         }
-        for (let k = 1; k <= ((2 * i) - 1); k++) {
-            if (k==1 || k==((2 * i) - 1)) {
-                pattern += "* ";
+        for (let k = 1; k <= ((2 * i) - 1); k++) {      //sixth 'for loop' to add * to downward pyramid
+            if (k==1 || k==((2 * i) - 1)) {     //condition to make downward pyramid hollow
+                pattern += "* ";    //adding outer * to downward pyramid
             } else {
-                pattern += "  ";
+                pattern += "  ";    //adding 'spaces' between * in downward pyramid
             }
         }
-        pattern += "\n";
+        pattern += "\n";    //new line after row completion
     }
-    console.log(pattern);
+    console.log(pattern);   //printing star to console
 }
 else {
 pattern = "Number must be greater than 1 to print star pattern.";

@@ -9,6 +9,10 @@ https://prismjs.com/download.html#themes=prism-twilight&languages=markup+css+cli
 	font-family: Dank-Mono;
 	src: url("./Dank_Mono_Regular.otf");
  }
+ @font-face {
+	font-family: Dank-Mono-italic;
+	src: url("./Dank_Mono_Italic.otf");
+ }
 code[class*="language-"],
 pre[class*="language-"] {
 	color: white;
@@ -83,6 +87,8 @@ code[class*="language-"]::selection, code[class*="language-"] ::selection {
 .token.doctype,
 .token.cdata {
 	color: hsl(0, 0%, 47%); /* #777777 */
+	font-family: Dank-Mono-italic;
+	font-style: italic;
 }
 
 .token.punctuation {
