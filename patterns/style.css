@@ -1,6 +1,14 @@
 @font-face {
-    font-family: cursive;
+    font-family: comic;
     src: url(../assets/comic.ttf);
+}
+@font-face {
+    font-family: Dank-Mono;
+    src: url(../prismjs/Dank_Mono_Regular.otf);
+}
+@font-face {
+    font-family: Dank-Mono-italic;
+    src: url(../prismjs/Dank_Mono_Italic.otf);
 }
 * {
     margin: 0px;
@@ -10,6 +18,7 @@
 
 body {
     padding: 10px;
+    overflow-x: auto;
 }
 
 .title {
@@ -29,7 +38,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: cursive;
+    font-family: comic, sans-serif;
+    max-width: 350px;
 }
 
 .inpt input {
@@ -39,7 +49,7 @@ body {
     border: 2px solid rgba(0, 0, 255, 0.254);
     border-radius: 6px;
     transition: all 0.2s ease-in;
-    font-family: cursive;
+    font-family: comic, sans-serif;
 }
 
 .inpt input:focus {
@@ -56,7 +66,7 @@ body {
     cursor: pointer;
     transition: all 0.2s ease-in;
     user-select: none;
-    font-family: cursive;
+    font-family: comic, sans-serif;
 }
 
 .inpt button:hover {
@@ -70,7 +80,8 @@ body {
 }
 
 .heading {
-    font-family: cursive;
+    font-family: comic, sans-serif;
+    font-family: Dank-Mono-italic, sans-serif;
 }
 
 .result {
@@ -79,6 +90,8 @@ body {
     line-height: 1;
     width: fit-content;
     font-weight: 700;
+    min-width: 280px;
+    display: block;
 }
 body::-webkit-scrollbar{
     height: 6px;
@@ -95,4 +108,36 @@ body::-webkit-scrollbar-thumb:hover{
 }
 body::-webkit-scrollbar-thumb:active{
     background-color: rgba(0, 0, 255, 0.581);
+}
+
+@media screen and (max-width: 868px) {
+    .title{
+        font-size: 28px;
+    }
+    .heading{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .title{
+        font-size: 24px;
+    }
+    .heading{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 440px) {
+    .heading{
+        font-size: 16px;
+    }
+    .inpt{
+        justify-content: start;
+    }
+    .inpt input{
+        width: 70%;
+        font-size: 14px;
+    }
+    .inpt button{
+        font-size: 14px;
+    }
 }

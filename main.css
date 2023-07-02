@@ -65,7 +65,7 @@ body.active{
 }
 .nav-left a{
     text-decoration: none;
-    font-family: 'Dank-Mono';
+    font-family: 'Dank-Mono', sans-serif;
     font-weight: 900;
     font-size: 32px;
     letter-spacing: -1px;
@@ -525,7 +525,7 @@ body.active{
 
 .footer-box p{
     margin-top: 12px;
-    font-family: 'Dank-Mono';
+    font-family: 'Dank-Mono', sans-serif;
     font-size: 17px;
     margin-bottom: 10px;
     color: #ffffffc9;
@@ -576,7 +576,7 @@ body.active{
     text-align: center;
     flex-wrap: wrap;
     border-top: 1px solid #767064;
-    font-family: 'Dank-Mono';
+    font-family: 'Dank-Mono', sans-serif;
     font-size: 17px;
     padding: 12px 0px;
     color: #cee1cd;
@@ -796,6 +796,12 @@ body::-webkit-scrollbar-thumb:active{
     .run-now span{
         font-size: 17px;
     }
+    .runner-container.active{
+        padding: 0px;
+    }
+    .close-runner{
+        padding: 16px;
+    }
 }
 @media (max-width: 360px) {
     .code{
@@ -827,5 +833,10 @@ body::-webkit-scrollbar-thumb:active{
     }
     .credits{
         font-size: 14px;
+    }
+}
+@media (max-width: 290px) {
+    .activeSidebar{
+        width: 100%;
     }
 }
