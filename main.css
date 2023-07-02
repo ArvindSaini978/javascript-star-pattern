@@ -522,23 +522,18 @@ body.active{
     gap: 20px;
     font-family: sans-serif;
 }
-.footer-link-h2{
-    font-size: 28px;
-    text-decoration: none;
-    color: white;
-    font-weight: 700;
-}
-.footer-link-1 p, .footer-link-2 p, .footer-link-3 p{
+
+.footer-box p{
     margin-top: 12px;
     font-family: 'Dank-Mono';
     font-size: 17px;
     margin-bottom: 10px;
     color: #ffffffc9;
 }
-.footer-link-2 h2, .footer-link-3 h2{
+.footer-link-h2{
     font-size: 28px;
 }
-.footer-link-2 a{
+.footer-href{
     color: #b1f765;
     font-family: sans-serif;
     text-decoration: none;
@@ -552,27 +547,26 @@ body.active{
     font-size: 15px;
 }
 .footer-link-3 a{
-    color: #b1f765;
-    font-family: sans-serif;
-    text-decoration: none;
-    padding: 7px 12px;
-    border-radius: 4px;
     width: 182px;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    transition: all 0.2s ease-in;
-    font-size: 15px;
 }
-.footer-link-2 span, .footer-link-3 span{
+.footer-link-4 a{
+    width: 125px;
+}
+.footer-logo{
+    font-size: 28px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+.footer-box span{
     margin-left: 2px;
     transition: all 0.2s ease-in;
 }
-.footer-link-2 a:hover, .footer-link-3 a:hover{
+.footer-href:hover{
     background: #e7d8d81a;
     color: #24cdff;
 }
-.footer-link-2 a:hover span, .footer-link-3 a:hover span{
+.footer-href:hover span{
     margin-left: 8px;
 }
 .credits{
@@ -695,10 +689,10 @@ body::-webkit-scrollbar-thumb:active{
     .run-now span{
         font-size: 18px;
     }
-    .footer-link-h2, .footer-link-2 h2, .footer-link-3 h2{
+    .footer-logo, .footer-link-h2{
         font-size: 24px;
     }
-    .footer-link-1 p, .footer-link-2 p, .footer-link-3 p{
+    .footer-box p{
         font-size: 15px;
     }
 }
@@ -822,13 +816,13 @@ body::-webkit-scrollbar-thumb:active{
     .pattern-preview h4{
         font-size: 16px;
     }
-    .footer-link-h2, .footer-link-2 h2, .footer-link-3 h2{
+    .footer-logo, .footer-link-h2{
         font-size: 20px;
     }
-    .footer-link-1 p, .footer-link-2 p, .footer-link-3 p{
+    .footer-link-1 p, .footer-box p{
         font-size: 14px;
     }
-    .footer-link-2 a, .footer-link-3 a{
+    .footer-box:nth-last-child(-n+3) a{
         font-size: 14px;
     }
     .credits{
