@@ -263,7 +263,7 @@ body.active{
 
 }
 
-.pattern-preview h4 {
+.pattern-preview-heading {
     font-size: 22px;
     font-style: italic;
     font-weight: 600;
@@ -763,7 +763,7 @@ body::-webkit-scrollbar-thumb:active{
     .heading{
         font-size: 24px;
     }
-    .pattern-preview h4{
+    .pattern-preview-heading{
         font-size: 20px;
     }
 }
@@ -786,7 +786,7 @@ body::-webkit-scrollbar-thumb:active{
     .heading{
         font-size: 22px;
     }
-    .pattern-preview h4{
+    .pattern-preview-heading{
         font-size: 18px;
     }
     .run-now{
@@ -819,7 +819,7 @@ body::-webkit-scrollbar-thumb:active{
     .heading{
         font-size: 20px;
     }
-    .pattern-preview h4{
+    .pattern-preview-heading{
         font-size: 16px;
     }
     .footer-logo, .footer-link-h2{
