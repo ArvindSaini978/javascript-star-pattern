@@ -452,6 +452,7 @@ body.active{
     overflow-x: hidden;
 }
 .run-frame{
+    border: none;
     height: 100%;
     width: 100%;
 }
