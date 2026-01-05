@@ -673,7 +673,7 @@ if (num > 1) {      //no star pattern for 0 or negative numbers.
             if (k==1 || k==((2*i)-1) || i==num) {       //condition to make pattern hollow
                 pattern += "* ";    //adding outer * to pattern string
             } else {
-                pattern += "  ";    //adding spaces between * to pattern string to make it hollow
+                pattern += "  ";    //adding spaces between * in pattern string to make it hollow
             }
         }
         pattern += "\n";    //new line after row completion
@@ -792,7 +792,11 @@ if (num > 1) {      //no star pattern for 0 or negative numbers.
             pattern += "  ";
         }
         for (let k = 1; k <= ((2 * i) - 1); k++) {      //third 'for loop' to add * to pattern string
-            pattern += "* ";
+            if (i == num || k == 1 || k == 2 * i - 1) {     //condition to make pattern hollow   
+                pattern += "* ";    //adding outer * to pattern string
+            } else {
+                pattern += "  ";    //adding spaces between * in pattern string to make it hollow
+            }    
         }
         pattern += "\n";    //new line after row completion
     }
